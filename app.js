@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 4000;
 
 app.get('/',(req,res) => {
     res.status(200);
-    res.send("Hello World!!");
+    res.send("Testing K8S deployments");
 });
 
 
