@@ -62,7 +62,7 @@ jobs:
           aws-region: ${{ env.AWS_DEFAULT_REGION }}
       - # K8s config
         name: Update kube config
-        run: aws eks --region ${{ env.AWS_DEFAULT_REGION }} update-kubeconfig --name ${{ env.EKS_CLUSTER }}
+        run: aws eks --region ${{ env.AWS_DEFAULT_REGION }} update-kubeconfig --name ${{ env.EKS_CLUSTER }} --dry-run
       - # Deploy to EKS
         name: Deploy to EKS
         run: |
