@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: rosechege/clockbox:latest
+        image: krharsh17/clockbox:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 4000
