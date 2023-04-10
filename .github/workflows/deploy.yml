@@ -42,7 +42,7 @@ jobs:
             context: .
             file: ./Dockerfile
             push: true
-            tags: ${{ env.DOCKERHUB_USERNAME_ID }}/clockbox:latest
+            tags: ${{ env.DOCKERHUB_USERNAME }}/clockbox:latest
             cache-from: type=gha
             cache-to: type=gha,mode=max
       - # Install kubectl
